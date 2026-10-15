@@ -1,15 +1,15 @@
-<span style="border-bottom: 0;"> # Software Requirements Specification </span>
-<span style="border-bottom: 0;"> ## For Nozama Shop </span>
+<h1> Software Requirements Specification </h1>
+<h2> For Nozama Shop </h2>
 
 Version 0.1.0
 Prepared by noobdev212@gmail.com
 
-<span style="border-bottom: 0;"> ## Revision History </span>
+<h2> Revision History </h2>
 | Name | Date | Description | Version |
 | ---- | ---- | ----------- | ------- |
 | noob212 | 15/10/2026 | Initial Planning Phase | v0.1.0 |
 
-<span style="border-bottom: 0;"> ## Table of Contents </span>
+<h2> Table of Contents </h2>
 * [1. Introduction](#1-introduction)
     * [1.1 Document Purpose](#11-document-purpose)
     * [1.2 Product Scope](#12-product-scope)
