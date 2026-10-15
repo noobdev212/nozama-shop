@@ -1,18 +1,15 @@
-<style>h1,h2,h3,h4 { border-bottom: 0; } </style>
-
-# Software Requirements Specification
----
-## For Nozama Shop
+<span style="border-bottom: 0;"> # Software Requirements Specification </span>
+<span style="border-bottom: 0;"> ## For Nozama Shop </span>
 
 Version 0.1.0
 Prepared by noobdev212@gmail.com
 
-## Revision History
+<span style="border-bottom: 0;"> ## Revision History </span>
 | Name | Date | Description | Version |
 | ---- | ---- | ----------- | ------- |
 | noob212 | 15/10/2026 | Initial Planning Phase | v0.1.0 |
 
-## Table of Contents
+<span style="border-bottom: 0;"> ## Table of Contents </span>
 * [1. Introduction](#1-introduction)
     * [1.1 Document Purpose](#11-document-purpose)
     * [1.2 Product Scope](#12-product-scope)
