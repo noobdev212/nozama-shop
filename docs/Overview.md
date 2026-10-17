@@ -5,10 +5,12 @@ Version 0.1
 Prepared by noobdev212@gmail.com
 
 <div style="border-bottom: none;"><h2> Revision History </h2></div>
+
 | Name | Date | Description | Version |
 | ---- | ---- | ----------- | ------- |
 | noob212 | 15/10/2026 | Initial Planning Phase | v0.1.0 |
 | noob212 | 16/10/2026 | Invisioning Chapter 2 | v0.1.1 |
+| noob212 | 17/10/2026 | Completing Initial Planning | v0.1.2 |
 
 <div style="border-bottom: none;"><h2> Table of Contents </h2></div>
 
@@ -50,6 +52,7 @@ Zonama is a retail store for availability of digital products from anywhere arou
 These documents are referential materials that is used as motivitation:
 
 * E-commerce 2016 business. technology. society. 12th edition (Kenneth C. Laudon, Carol Guercio Travor)
+* Web Content Accessibility Guidelines (WCAG) 2.2
 
 #### 1.5 Document Overview
 
@@ -95,13 +98,56 @@ The key assumptions are:
 - Unverified products will not be sold without the permitted token from the original owner.
 - No separate Integration Management System (IMS) will be develop to manage products. Management will be limited to the website itself.
 - To list your product as proof of ownership. The product must not be listed within the database of accredited owners. If the product is unlisted, ownership can be bought for the product which delegates the role of supplier to the owner. Ownership can  be shared or delegated for the role to anyone entursted by the owner.
+- Once item is bought, there wouldn't be a refund button for the consumer. Items can be re-download depending on the constraint given to the product that must be listed on the post. This is to follow transparency to all buyers of digital assets.
 
 ### 3. Requirements
 
 #### 3.1 External Interfaces
 
-#### 3.2 Functional
+##### 3.1.1 User Interfaces
 
-#### 3.3 Quality of Service
+All user interface should adhere to WCAG 2.2, Level A. Guidlines such as responsive UI for PC monitors (1920x1080) to small mobile screens (480x854). Tab index should follow the correct order based on UI visual heirarchy. Text shall adhere to readability guidelines for all targeted screen device and considerations to all ages. The maximum size error message is 80 characters. Navigating the site shall be simpler through simpler routes and ease of use.
+
+| ID | Name | Description | Acceptance Criteria | 
+| -- | ---- | ----------- | ------------------- |
+| SPEC-UI-001 | Login | Login Screening - all users are required to login using valid email and password. Consumer is the default role while other roles requires verification or configured by the admin | Error message for invalid inputs, and failed submittion. |
+| SPEC-UI-002 | Register | Register Account - non-admin users are required to create there accounts to access the site. Strict personal information shall be required for registration therefore users must acknowledge the Data Privacy Act to confirm that the owner of the personal information has accepted the aggreement. Upon creation of the account, the role assign to the account will always be Consumer. | Error message for invalid inputs, and failed submittion. |
+| SPEC-UI-003 | Catalog | Comprise of the following a.) Home page for recommended items and ads b.) Inventory page for items that are being currently sold. | Paging is utilize to minimize large catalog. Filters and search query should be available to categorize items within the interest of the consumer. Essential details regarding the digital assets such as product name, price, constraints (i.e qunatity, availability, discounts, etc), storage size, and the seller name must be displayed along with product cover. |
+| SPEC-UI-004 | Buy & Post Item | Consumers view of buying items while sellers view of setting up the item to be sold on the market. | A 2-3 sentence description about the product. A mimxumum of 8 screenshots of the product. Pre-requisites such as hardware and software must be listed if any. Required token input to recognize the item as a verified asset. Allow feedback feature that display the comments. Feedback can only be surveyed after payment | 
+| SPEC-UI-005 | Profile Settings | User profile settings provides the right to view, modify, add new information, and delete account |  |
+| SPEC-UI-006 | Shopping Cart | The current items being bought as of the moment. Authorized only to users with consumer privileges. | Ability to delte or add items from the shopping list. Detail breakdown of the total cost and the computation. Ability to configure items given that there are options provided. Provide user the ability to search items. Proceed with payment or cancellation for the items. |
+| SPEC-UI-007 | Product Tracker | | |
+| SPEC-UI-008 | Product Config | | |
+| SPEC-UI-009 | Inventory Management | | |
+| SPEC-UI-010 | Dashboard | | |
+| SPEC-UI-011 | Account Management | | | 
+| SPEC-UI-012 | Audit Logs | | |
+
+##### 3.1.2 Software Interfaces
+
+The system is self-contained and thus, internal data shouldn't be shared with any third party vendors. All end users must undergo account creation or verification to access wanted features from the site. Email and SMS are utilize to send notification of transactions and invoices within the app which can be configured by the user. Payment transaction should be handle by the E-Wallets API's such as `Paymaya` and `GCash`. Technology stack use to develop the application are of the following:
+
+* Django
+* Sqlite3
+
+Other miscellaneous will require the following software to visit the site:
+
+* Browser
+* Operating System 
+
+#### 3.2 Functional
+Each requirements are tag with an ID that follows this pattern: SPEC-[AREA]-[NO.]
+
+Options for functional area:
+* UI
+* API
+* SEC (Security)
+* TEST
+* DB (Database)
+* DEP (Deployment)
+* SUP (Support)
+
+| ID | Feature Name | Input | Output | Errors |
+| -- | ------------ | ----- | ------ | ------ |
 
 ### 4. Appendixes
