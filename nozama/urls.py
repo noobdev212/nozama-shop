@@ -1,6 +1,7 @@
-from django.urls import path 
-from .views import DesignView
+from django.urls import path, re_path
+from .views import DesignView, TestView
 
 urlpatterns = [
-    path('dev/', DesignView.as_view(), name='design')
+    re_path(r'^dev/(?P<subpath>.*)$', DesignView.as_view(), name='dev'),
+    path('test/', TestView.as_view(), name='test-template')
 ]
