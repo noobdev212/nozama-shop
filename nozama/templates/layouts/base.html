@@ -11,6 +11,6 @@
 </head>
 <body>
     {% csrf_token %}
-    {{ content }}
+    {% block content %}{% endblock %}
 </body>
 </html>
