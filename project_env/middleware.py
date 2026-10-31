@@ -13,7 +13,7 @@ class SandboxMiddleware(MiddlewareMixin):
         Verify if environment is set to sandbox
         otherwise, return HTTP error 400
         """
-        url_path = reverse(resolve(request.path).view_name)
+        url_path = request.path
         if url_path.startswith('/dev'):
             if not settings.ENVIRONMENT:
                 print(f'Please define environment in settings')
