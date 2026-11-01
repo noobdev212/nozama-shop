@@ -1,3 +1,4 @@
+{% load static %}
 {% load cache %}
 
 <!DOCTYPE html>
@@ -5,6 +6,7 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+    <link rel='stylesheet' href="{% static 'css/base.css' %}">
     {% block header_title %}{% endblock %}
     {% block header_css %}{% endblock %}
     {% block header_js %}{% endblock %}
