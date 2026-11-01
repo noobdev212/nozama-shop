@@ -23,10 +23,3 @@ class DesignView(View):
             logger.info(context['content'])
 
         return render(request, self.template_name, context)
-
-class TestView(View):
-    template_name = 'test/test.html'
-
-    def get(self, request):
-        logger.info(__class__)
-        return render(request, self.template_name)
