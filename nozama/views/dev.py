@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views import View
 from django.template.loader import render_to_string
-from django.urls import resolve
+import os
 import logging 
 
 logger = logging.getLogger('main')
@@ -18,8 +18,6 @@ class DesignView(View):
         # verify if there exist trailing path from /dev/
         if subpath: 
             logger.debug(f'extracted {subpath}')
-            view_class = resolve(f'/{subpath}/').func.view_class
-            context['content'] = render_to_string(view_class.template_name)
-            logger.info(context['content'])
+            context['content'] = render_to_string(f'{subpath}.html')
 
         return render(request, self.template_name, context)
