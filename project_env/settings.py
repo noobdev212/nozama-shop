@@ -25,6 +25,49 @@ SECRET_KEY = 'django-insecure-yoc&9-%-k_l)s*#s=g$vp-t#%^piua@=s2=c=94a6%8!apsdk2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'standard_formatter': {
+            'format': '{asctime} - {levelname} - {module}: {message}',
+            'style': '{'
+        }
+    },
+    'filters': {
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse',
+        }
+    },
+    'handlers': {
+        'dev': {
+            'level': 'DEBUG',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'standard_formatter'
+        },
+        'prod': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': 'journal.log',
+            'filters': ['require_debug_false'],
+            'formatter': 'standard_formatter'
+        }
+    },
+    'loggers': {
+        'main': {
+            'handlers': ['dev', 'prod'],
+            'level': 'DEBUG',
+            'propagate': True
+        }
+    }
+}
+    
+
+
 ALLOWED_HOSTS = []
 
 ENVIRONMENT = 'sandbox'
@@ -118,7 +161,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
 STATIC_URL = 'static/'
-
 
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
