@@ -13,7 +13,9 @@
 </div>
 
 <div class="padding-md">
-    {% with dict=food header=title%}
+    {% with dict=food header=title %}
     {% include 'components/dropdown.html#dropdown' %}
     {% endwith %}
 </div>
+
+{% include 'components/navbar.html#navbar' with tabs=food %}
