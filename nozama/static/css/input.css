@@ -1,0 +1,50 @@
+.input > input, .input > input:focus {
+    border: none;
+    outline: none;
+    background-color: var(--color-active-500);
+    color: var(--color-text-600);
+    flex-grow: 1;
+    max-width: 60vw;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-xl);
+}
+
+.input > .icon {
+    cursor: pointer;
+}
+
+.input {
+    border-radius: var(--border-sm);
+    background-color: var(--color-active-500);
+    width: fit-content;
+    border-radius: var(--border-sm);
+}
+
+.input-lg {
+    padding: var(--space-md) var(--space-lg);
+}
+
+.input-lg > input {
+    font-size: var(--text-md);
+}
+
+.input-md {
+    padding: var(--space-md) var(--space-lg);    
+}
+
+.input-md > input {
+    font-size: var(--text-sm);
+}
+
+.input-sm {
+    padding: var(--space-sm) var(--space-lg);
+}
+
+.input-sm > input {
+    font-size: var(--text-xs);
+}
