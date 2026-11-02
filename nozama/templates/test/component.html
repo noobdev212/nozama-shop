@@ -1,11 +1,19 @@
 <div class="padding-md">
+    {% with btn_content="test button" %}
     {% include 'components/button.html#btn_lg' %}
     {% include 'components/button.html#btn_md' %}
     {% include 'components/button.html#btn_sm' %}
+    {% endwith %}
 </div>
 
 <div class="padding-md flex-col gap-1">
     {% include 'components/input.html#search_lg' %}
     {% include 'components/input.html#search_md' %}
     {% include 'components/input.html#search_sm' %}
+</div>
+
+<div class="padding-md">
+    {% with dict=food header=title%}
+    {% include 'components/dropdown.html#dropdown' %}
+    {% endwith %}
 </div>

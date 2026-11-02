@@ -18,6 +18,13 @@ class DesignView(View):
         # verify if there exist trailing path from /dev/
         if subpath: 
             logger.debug(f'extracted {subpath}')
-            context['content'] = render_to_string(f'{subpath}.html')
+            context['content'] = render_to_string(f'{subpath}.html', {
+                "food": {
+                    'fish': 'fish',
+                    'dog': 'dog',
+                    'cat': 'cat'
+                },
+                "title": "Test"
+            })
 
         return render(request, self.template_name, context)
