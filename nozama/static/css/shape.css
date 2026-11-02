@@ -1,0 +1,23 @@
+.w-full {
+    width: 100vw !important; 
+}
+
+.w-100 {
+    width: 100% !important; 
+}
+
+.rounded-xs {
+    border-radius: var(--border-xs) !important;
+}
+
+.rounded-sm {
+    border-radius: var(--border-sm) !important;
+}
+
+.rounded-md {
+    border-radius: var(--border-md) !important;
+}
+
+.rounded-lg {
+    border-radius: var(--border-lg) !important;
+}

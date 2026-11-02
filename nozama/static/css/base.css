@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+@import 'layout.css';
+@import 'text.css';
+@import 'color.css';
+@import 'shape.css';
 @import 'icon.css';
 @import 'input.css';
 @import 'button.css';
+@import 'dropdown.css';
 
 *, *::after, *::before {
     margin: 0;
@@ -62,58 +67,4 @@
 
 /* phone screens */
 @media (width < 500px) {
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-col {
-    display: flex;
-    flex-direction: column;
-}
-
-.w-full {
-    width: 100vw !important; 
-}
-
-.w-100 {
-    width: 100% !important; 
-}
-
-.row-gap-1 {
-    row-gap: var(--space-lg) !important;
-}
-
-.row-gap-2 {
-    row-gap: var(--space-xl) !important;
-}
-
-.col-gap-1 {
-    column-gap: var(--space-lg) !important;
-}
-
-.col-gap-2 {
-    column-gap: var(--space-xl) !important;
-}
-
-.gap-1 {
-    gap: var(--space-lg) !important;
-}
-
-.gap-2 {
-    gap: var(--space-xl) !important;
-}
-
-
-.padding-sm {
-    padding: var(--space-sm) var(--space-md) !important;
-}
-
-.padding-md {
-    padding: var(--space-md) var(--space-lg) !important;
-}
-
-.padding-lg {
-    padding: var(--space-lg) var(--space-xl) !important;
 }

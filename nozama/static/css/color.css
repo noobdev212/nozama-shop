@@ -1,0 +1,27 @@
+.bg-hint-500 {
+    background-color: var(--color-hint-500);
+}
+
+.bg-active-500 {
+    background-color: var(--color-active-500) !important;
+}
+
+.bg-active-400 {
+    background-color: var(--color-active-400) !important;
+}
+
+.text-300 {
+    color: var(--color-text-300) !important;
+}
+
+.text-400 {
+    color: var(--color-text-400) !important;
+}
+
+.text-500 {
+    color: var(--color-text-500) !important;
+}
+
+.text-600 {
+    color: var(--color-text-600) !important;
+}
