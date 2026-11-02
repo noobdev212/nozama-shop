@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-* {
+@import 'icon.css';
+@import 'input.css';
+@import 'button.css';
+
+*, *::after, *::before {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 :root {
@@ -11,10 +17,17 @@
     --color-fg-500: #CCCCCC;
     --color-header-500: #333333;
     --color-hint-500: #b0b0b0;
+
+    --color-active-400: oklch(from var(--color-active-500) calc(l + 0.1) c h);
     --color-active-500: #484848;
+    
     --color-primary-500: #bebaba;
     --color-secondary-500: #b9c0d5;
+    
+    --color-text-300: oklch(from var(--color-text-400) calc(l - 0.1) c h);
+    --color-text-400: oklch(from var(--color-text-500) calc(l - 0.1) c h);
     --color-text-500: #8C8C8C;
+    --color-text-600: oklch(from var(--color-text-500) calc(l + 0.1) c h);
 }
 
 /* desktop screens */
@@ -41,61 +54,6 @@
         --space-xl: 32px;
         --space-2xl: 64px;
     }
-
-    .btn-lg {
-        font-size: var(--text-lg);
-        line-height: 1.4;
-        border-radius: var(--border-sm);
-        padding: var(--space-md) var(--space-xl);
-        min-width: 46px;
-    }
-
-    .btn-md {
-        font-size: var(--text-md);
-        line-height: 1.2;
-        padding: var(--space-md) var(--space-xl);
-        min-width: 37px;
-    }
-
-    .btn-sm {
-        font-size: var(--text-sm);
-        line-height: 1.2;
-        padding: var(--space-md) var(--space-xl);
-        min-width: 28px;
-    }
-
-    .padding-sm {
-        padding: var(--space-sm) var(--space-md) !important;
-    }
-
-    .padding-md {
-        padding: var(--space-md) var(--space-lg) !important;
-    }
-
-    .padding-lg {
-        padding: var(--space-lg) var(--space-xl) !important;
-    }
-
-    [class^='btn'], [class*='btn'] {
-        background-color: var(--color-active-500);
-        color: var(--color-text-500);
-        border-radius: var(--border-sm);
-        font-weight: 400;
-        border: none;
-        cursor: pointer;
-        transition: 
-            background-color 0.4s cubic-bezier(0.85, 0, 0.0, 0.5), 
-            transform 0.5s cubic-bezier(0.85, 0, 0.0, 0.5);
-    }
-
-    [class^='btn']:hover, [class*='btn']:hover {
-        transform: scale(1.05);
-    }
-
-    [class^='btn']:active, [class*='btn']:active {
-        background-color: var(--color-secondary-500);
-        transform: scale(1);
-    }
 }
 
 /* tablet screens */
@@ -104,4 +62,58 @@
 
 /* phone screens */
 @media (width < 500px) {
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.w-full {
+    width: 100vw !important; 
+}
+
+.w-100 {
+    width: 100% !important; 
+}
+
+.row-gap-1 {
+    row-gap: var(--space-lg) !important;
+}
+
+.row-gap-2 {
+    row-gap: var(--space-xl) !important;
+}
+
+.col-gap-1 {
+    column-gap: var(--space-lg) !important;
+}
+
+.col-gap-2 {
+    column-gap: var(--space-xl) !important;
+}
+
+.gap-1 {
+    gap: var(--space-lg) !important;
+}
+
+.gap-2 {
+    gap: var(--space-xl) !important;
+}
+
+
+.padding-sm {
+    padding: var(--space-sm) var(--space-md) !important;
+}
+
+.padding-md {
+    padding: var(--space-md) var(--space-lg) !important;
+}
+
+.padding-lg {
+    padding: var(--space-lg) var(--space-xl) !important;
 }
