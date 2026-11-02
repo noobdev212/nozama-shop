@@ -59,6 +59,10 @@
     padding-right: var(--space-lg) !important;
 }
 
+.pt-md {
+    padding-top: var(--space-md);
+}
+
 .flex-1 {
     flex: 1;
 }
@@ -69,4 +73,12 @@
 
 .flex-right {
     justify-content: right;
+}
+
+.mb-md {
+    margin-bottom: var(--space-md);
+}
+
+.mb-lg {
+    margin-bottom: var(--space-lg);
 }

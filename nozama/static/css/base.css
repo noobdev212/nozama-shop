@@ -10,6 +10,8 @@
 @import 'button.css';
 @import 'dropdown.css';
 @import 'nav.css';
+@import 'card.css';
+@import 'action.css';
 
 *, *::after, *::before {
     margin: 0;
@@ -47,8 +49,10 @@
         --border-xl: 32px;
         --border-2xl: 64px;
 
+        --text-xxs: 12px;
         --text-xs: 14px;
         --text-sm: 16px;
+        --text-ssm: 22px;
         --text-md: 24px;
         --text-lg: 30px;
         --text-xl: 36px;
@@ -57,6 +61,7 @@
         --space-xs: 2px;
         --space-sm: 4px;
         --space-md: 8px;
+        --space-lg: 16px;
         --space-lg: 16px;
         --space-xl: 32px;
         --space-2xl: 64px;

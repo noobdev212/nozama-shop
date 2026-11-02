@@ -13,7 +13,7 @@ h3 {
     font-weight: 400;
 }
 
-h4 { 
+h4 {
     font-size: var(--text-sm); 
     font-weight: 400;
 }
@@ -21,4 +21,29 @@ h4 {
 h5 { 
     font-size: var(--text-xs); 
     font-weight: 400;
+}
+
+.font-600 {
+    font-weight: 600 !important;
+}
+
+.font-700 {
+    font-weight: 700 !important;
+}
+
+.font-400 {
+    font-weight: 400 !important;
+}
+
+.font-300 {
+    font-weight: 300 !important;
+}
+
+
+.text-xxs {
+    font-size: var(--text-xxs);
+}
+
+.text-ssm {
+    font-size: var(--text-ssm);
 }
