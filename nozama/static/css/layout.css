@@ -58,3 +58,15 @@
     padding-left: var(--space-lg) !important;
     padding-right: var(--space-lg) !important;
 }
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-right {
+    justify-content: right;
+}
