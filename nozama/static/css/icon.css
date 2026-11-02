@@ -1,0 +1,15 @@
+.icon {
+    fill: none;
+    stroke: var(--color-hint-500);
+    stroke-width: 2;
+}
+
+.icon-round {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
