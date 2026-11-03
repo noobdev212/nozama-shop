@@ -12,7 +12,7 @@
     <div class="card-body padding-md">
         <h4 class="font-600 pointer">{{ title|default:'Product Title' }}</h4>
         <h5 class="text-xxs font-300 mb-md">{{ author|default:'by NoobDev212' }}</h5>
-        <h3 class="text-2sm font-700 mb-lg">{{ price|default:'Php 1.00' }}</h3>
+        <h3 class="text-2sm font-700 mb-lg">Php {{ price|default:'1.00' }}</h3>
         {% include 'components/button.html#btn_sm' with btn_content='Add to Cart' %}
     </div>
 </div>

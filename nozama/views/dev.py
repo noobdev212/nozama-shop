@@ -24,6 +24,24 @@ class DesignView(View):
                     'dog': 'dog',
                     'cat': 'cat'
                 },
+                "product": [
+                    {
+                        "title": "Hello Neighbor",
+                        "author": "Marky Reynold",
+                        "price": "100.00"
+                    },
+                    {
+                        "title": "Calculus for Dumbass",
+                        "author": "Mark Ronald",
+                        "price": "10.00"
+                    },
+                    {
+                        "title": "The files",
+                        "author": "Secret",
+                        "price": "-2.00"
+                    },
+                ],
+
                 "title": "Test"
             })
 

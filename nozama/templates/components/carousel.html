@@ -1,0 +1,9 @@
+{% partialdef carousel %}
+<div class="carousel flex gap-1">
+    {% for item in content %}
+        {% with title=item.title author=item.author price=item.price img_name=item.img_name %}
+        {% include 'components/card.html#card'%}
+        {% endwith %}
+    {% endfor %}
+</div>
+{% endpartialdef %}
