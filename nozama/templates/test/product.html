@@ -1,0 +1,27 @@
+<div class="flex-col w-full h-full">
+    {% include 'components/navbar.html#navbar' with tabs=food %}
+
+    <div class="flex h-100">
+        <aside class="padding-lg bg-primary-500 flex-1-3 flex-col">
+            <div class="flex-col text-0 text-mmd stroke-100">
+                <h3 class="font-700 mt-lg text-lg">Digital Books</h3>
+                {% with tabs=food %}
+                    {% for key, items in tabs.items %}
+                        {% include 'components/dropdown.html#dropdown' with header=items dict=food%}
+                    {% endfor %}
+                {% endwith %}
+            </div>
+            <div class="flex-col">
+                <h3 class="font-700 mt-lg text-lg">Relevance</h3>
+                {% with tabs=food %}
+                    {% for key, items in tabs.items %}
+                        <p class="text-mmd padding-md pointer">{{ items }}</p>
+                    {% endfor %}
+                {% endwith %}
+            </div>
+        </aside>
+        <article class="flex-4-3 flex-col pt-xl pl-xl">
+            {% include 'components/carousel.html#carousel' with content=product %}
+        </article>
+    </div>
+</div>
