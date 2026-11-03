@@ -2,6 +2,10 @@
     background-color: var(--color-hint-500);
 }
 
+.bg-primary-500 {
+    background-color: var(--color-primary-500);
+}
+
 .bg-active-500 {
     background-color: var(--color-active-500) !important;
 }
@@ -28,4 +32,32 @@
 
 .text-600 {
     color: var(--color-text-600) !important;
+}
+
+.text-700 {
+    color: var(--color-text-700) !important;
+}
+
+.text-800 {
+    color: var(--color-text-800) !important;
+}
+
+.text-900 {
+    color: var(--color-text-900) !important;
+}
+
+.text-1000 {
+    color: var(--color-text-1000) !important;
+}
+
+.stroke-0 {
+    stroke: var(--color-hint-0) !important;
+}
+
+.stroke-100 {
+    stroke: var(--color-hint-100) !important;
+}
+
+.stroke-500 {
+    stroke: var(--color-hint-500) !important;
 }
