@@ -1,0 +1,17 @@
+{% load static %}
+
+{% partialdef navbar %}
+<nav class="nav bg-fg-500 gap-1 padding-lg">
+    <div class="flex-1">
+        <img class="logo" src="{% static 'img/nozama-logo.png' %}">
+    </div>
+    <span class="flex-2">
+        {% include 'components/input.html#search_md' %}
+    </span>
+    <span class="flex-1 padding-sm flex gap-1 flex-right">
+        {% for key, item in tabs.items %}
+            {% include 'components/button.html#btn_sm' with btn_content=key %}
+        {% endfor %}
+    </span>
+</nav>
+{% endpartialdef %}

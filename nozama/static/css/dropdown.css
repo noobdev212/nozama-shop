@@ -1,0 +1,17 @@
+.dropdown-content {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    cursor: pointer;
+    width: fit-content;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

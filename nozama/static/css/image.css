@@ -1,0 +1,9 @@
+.logo {
+    min-width: 98px;
+    max-width: 124px;
+    aspect-ratio: 49/16;
+}
+
+.image-holder {
+    width: 100.9%;
+}

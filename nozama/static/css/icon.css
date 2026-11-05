@@ -1,0 +1,14 @@
+.icon {
+    fill: none;
+    stroke-width: 2;
+}
+
+.icon-round {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.icon-sm {
+    width: 24px;
+    height: 24px;
+}

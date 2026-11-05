@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg-500: #F8F9FA;
+    --color-fg-500: #CCCCCC;
+    --color-header-500: #333333;
+
+    --color-hint-0: #000;
+    --color-hint-100: oklch(from var(--color-hint-200) calc(l - 0.1) c h);
+    --color-hint-200: oklch(from var(--color-hint-300) calc(l - 0.1) c h);
+    --color-hint-300: oklch(from var(--color-hint-400) calc(l - 0.1) c h);
+    --color-hint-400: oklch(from var(--color-hint-500) calc(l - 0.1) c h);
+    --color-hint-500: #b0b0b0;
+
+    --color-active-400: oklch(from var(--color-active-500) calc(l + 0.1) c h);
+    --color-active-500: #484848;
+    
+    --color-primary-500: #bebaba;
+    --color-secondary-500: #b9c0d5;
+    
+    --color-text-0: #000;
+    --color-text-100: oklch(from var(--color-text-200) calc(l - 0.1) c h);
+    --color-text-200: oklch(from var(--color-text-300) calc(l - 0.1) c h);
+    --color-text-300: oklch(from var(--color-text-400) calc(l - 0.1) c h);
+    --color-text-400: oklch(from var(--color-text-500) calc(l - 0.1) c h);
+    --color-text-500: #8C8C8C;
+    --color-text-600: oklch(from var(--color-text-500) calc(l + 0.1) c h);
+    --color-text-700: oklch(from var(--color-text-600) calc(l + 0.1) c h);
+    --color-text-800: oklch(from var(--color-text-700) calc(l + 0.1) c h);
+    --color-text-900: oklch(from var(--color-text-800) calc(l + 0.1) c h);
+}
+
+/* desktop screens */
+@media (width >= 900px) {
+    :root {
+        --border-xs: 2px;
+        --border-sm: 4px;
+        --border-md: 8px;
+        --border-lg: 16px;
+        --border-xl: 32px;
+        --border-2xl: 64px;
+
+        --text-xxs: 12px;
+        --text-xs: 14px;
+        --text-sm: 16px;
+        --text-ssm: 22px;
+        --text-md: 24px;
+        --text-lg: 30px;
+        --text-xl: 36px;
+        --text-2xl: 42px;
+
+        --space-xs: 2px;
+        --space-sm: 4px;
+        --space-md: 8px;
+        --space-lg: 16px;
+        --space-lg: 16px;
+        --space-xl: 32px;
+        --space-2xl: 64px;
+    }
+}
+
+/* tablet screens */
+@media (width >= 500px) {
+}
+
+/* phone screens */
+@media (width < 500px) {
+}

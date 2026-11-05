@@ -1,0 +1,17 @@
+{% partialdef btn_lg %}
+<button class="btn btn-lg">
+    {{ btn_content|default:'Hello World' }}
+</button>
+{% endpartialdef %}
+
+{% partialdef btn_md %}
+<button class="btn btn-md">
+    {{ btn_content|default:'Hello World' }}
+</button>
+{% endpartialdef %}
+
+{% partialdef btn_sm %}
+<button class="btn btn-sm">
+    {{ btn_content|default:'Hello World' }}
+</button>
+{% endpartialdef %}

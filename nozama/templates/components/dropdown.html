@@ -1,0 +1,14 @@
+{% partialdef dropdown %}
+<div class="dropdown radius-md w-100">
+    <div class="flex padding-md col-gap-1 space-between">
+        {{ header }}
+        {% include 'components/icons.html#arrowdown' %}
+    </div>
+
+    <ul class="dropdown-content pl-lg">
+        {% for key, item in dict.items %}
+            <li key="{{item}}">{{ item }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endpartialdef %}
