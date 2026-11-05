@@ -1,0 +1,15 @@
+<div class="flex-col w-full h-full">
+    {% include 'components/navbar.html#navbar' with tabs=food %}
+    <div class="flex">
+        <aside class="product-view">
+            {% include 'components/display.html#display' %}
+        </aside>
+        <article class="product-option">
+            <h2 class="font-700">Calculus for Dummies</h2>
+            <h4 class="product-details">Calculus for dummies is a book which helps students or new learnes of math to be introduce to the world of calculus using inconventional methods</h4>
+            <h2 class="product-price font-700">Php 960.00</h2>
+            <h4 class="font-700">Additional Details</h4>
+            {% include 'components/button.html#btn_md' with btn_content='Add to Cart' %}
+        </article>
+    </div>
+</div>
