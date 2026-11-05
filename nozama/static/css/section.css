@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-view > * {
+    width: 100%;
+}
+
+.product-view {
+    width: 40%;
+    padding: var(--space-xl) var(--space-2xl);
+    background-color: var(--color-bg-500);
+}
+
+.product-option {
+    background-color: var(--color-bg-500);
+    width: 60%;
+    padding: var(--space-2xl) var(--space-xl);
+    gap: var(--space-sm);
+}
+
+.product-details, .product-price {
+    max-width: 30vw;
+    line-height: 1.4;
+}
