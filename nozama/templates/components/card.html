@@ -4,7 +4,7 @@
 <div class="card">
     <div class="card-header">
         {% if img_name %}
-            <img src="{% static 'img/{{ img_name }}' %}">
+            <img src="{% static 'img/'|add:img_name %}">
         {% else %}
             <img class="image-holder" src="{% static 'img/card-header.png' %}">
         {% endif %}

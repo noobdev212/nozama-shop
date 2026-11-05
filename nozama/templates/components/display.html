@@ -1,0 +1,14 @@
+{% load static %}
+
+{% partialdef display %}
+<div class="display">
+    <div class="main-display">
+        <img src="{% static 'img/'|add:images.0 %}">
+    </div>
+    <div class="option-display">
+        {% for name in images %}
+            <img src="{% static 'img/'|add:name %}">
+        {% endfor %}
+    </div>
+</div>
+{% endpartialdef %}

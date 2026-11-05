@@ -41,7 +41,11 @@ class DesignView(View):
                         "price": "-2.00"
                     },
                 ],
-
+                "images": [
+                    "image-holder.png",
+                    "image-holder.png",
+                    "image-holder.png"
+                ],
                 "title": "Test"
             })
 
